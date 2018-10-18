@@ -1,22 +1,28 @@
 <?php
+    
+$booleanTrue = true;
+$booleanFalse = false;
 
-$booleanTrue;
-$booleanFalse;
+$int = 1;
 
-$int;
+$float = 1.1;
 
-$float;
+$integer = 1;
 
-$integer;
+$double = 1.1;
 
-$double;
+$string = 'abacus';
 
-$string;
+$array = ['crazy', 7, 'bastards'];
 
-$array;
+$doubleDimenssionArray = [
+'w3f'=> ['courses', 'notes', 3],
+'technoport' => ['lost', 'in', 'space']
+];
 
-$doubleDimenssionArray;
+$associativeArray = [
+'porto' => ['players', 'ball', 'pitch'],
+'benfica' => ['bad players', 'amateurs', 'dumb people']
+];
 
-$associativeArray;
-
-$null;
+$null = null;
