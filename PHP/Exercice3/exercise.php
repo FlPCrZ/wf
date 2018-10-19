@@ -5,8 +5,7 @@ $pointsA = 0;
 $pointsB = 0;
 
 forEach($input as $row) {
-    $cardA = $row[0];
-    $cardB = $row[1];
+    list($cardA, $cardB) = $row;
     if ($cardA > $cardB) {
         $pointsA += 1;
     } else if ($cardA < $cardB) {
