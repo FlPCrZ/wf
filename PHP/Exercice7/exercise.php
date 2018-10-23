@@ -5,7 +5,7 @@
 function divide(int $dividend, int $divisor) : float{
     // If the divisor is zero, you must throw a RuntimeException.
     if ($divisor === 0){
-        throw RuntimeException;
+        throw RuntimeException; 
     }
     return $dividend / $divisor;
 }
@@ -18,12 +18,15 @@ function arrayDivide(array $arrayValues, int $divisor) : array {
 // If the disor is zero, you must catch the exception and return the array of value, as it.
     foreach($arrayValues as $val){
         try {
-            $res[] = divide($val, $divisor);
+            $res[] = divide($val, $divisor); // division check;
         } catch (Runtimeexception $e) {
-            $res[] = $val;
+            $res[] = $val; // catch runtime error and return value
         }
     }
     return $res;
 }
 
 
+/* The idea is to catch the error that is thrown by the divide() function...
+ * it can then be returned by the stack...
+ */
