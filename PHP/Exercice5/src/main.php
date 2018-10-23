@@ -12,4 +12,6 @@ $distance = threeDimensionDistance(
 );
 
 $angle = getVectorAngle([1, 6], [3, 12]);
+
 var_dump($distance, $angle);
+  
