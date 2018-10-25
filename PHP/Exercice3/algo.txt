@@ -1,0 +1,16 @@
+$input; // Turn of given cards
+$winner; // winner 
+
+// cardA = $input[0]
+// cardB = $input[1]
+
+// if cardA > cardB => A.points +1
+// else if cardB > cardA => B.points + 1
+
+// if cardA === cardB => draw
+
+// if A.points > B.points => $winner = A
+// else if B.points > A.points => $winner = B
+
+// if A.points === B.points;
+// redo [point 1 + 2]
