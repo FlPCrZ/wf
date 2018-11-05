@@ -6,6 +6,7 @@
  * 
  * FIXME: Return articles instead of variables declaration
  */
+
 $articles = [
     [
         'id' => 1,

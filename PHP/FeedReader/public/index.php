@@ -1,13 +1,13 @@
-<?php 
+<?php
 
-$suffix = __DIR__ . '/../controller/';  
+$suffix = __DIR__ . '/../controller/';
 $routing = [
     $suffix . 'index.php' => ['/', ''],
     $suffix . 'register.php' => ['/register.php'],
     $suffix . 'login.php' => ['/login.php'],
     $suffix . 'logout.php' => ['/logout.php'],
-    $suffix . 'createProject.php' => ['/createProject.php']
 ];
+
 
 $url = $_SERVER['REQUEST_URI'];
 if (substr($url, 0, strlen('index.php')) == 'index.php') {
@@ -26,6 +26,6 @@ foreach ($routing as $controller => $urls) {
     if (in_array($url, $urls)) {
         require_once $controller;
     }
-} 
+}
 
 session_write_close();
